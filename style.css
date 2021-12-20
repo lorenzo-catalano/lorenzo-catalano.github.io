@@ -1,116 +1,50 @@
+html{
+    display:flex;
+    height:100%;
+    width:100%;
+}
+html {
+    box-sizing: border-box;
+}
 *, *:before, *:after {
-  box-sizing: border-box;
+    box-sizing: inherit;
 }
-
-html, body, #main {
-  height: 100%;
-  margin: 0;
-}
-
 body {
-  color: #212121;
-  font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.02em;
-}
-
-#main {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 20%;
-}
-
-#main>div {
-  overflow: hidden;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.7s cubic-bezier(.17, .67, .36, .96);
-  position: relative;
-  min-height: 56px;
-  cursor:pointer;
-  position:relative;
-}
-
-#main>div.active {
-  flex-grow: 9;cursor:default;
-}
-
-
-header {
-  font-weight: bold;
-  font-size: 1.1em
-}
-
-.body {
-  padding: 0 10px;
-  opacity: 0;
-  transition: all 0.7s cubic-bezier(.17, .67, .36, .96);
-  max-height: 0
-}
-
-#main>div.active header {}
-
-#main>div.active .body {
-  padding: 10px;
-  opacity: 1;
-  max-height: 500px;
-}
-.pleft,.pright{
-  position:absolute;
-  background:black;
-  height:100%;
-  width:500px;
-  transform: skew(-20deg, 0deg);
-  transition: all 0.5s cubic-bezier(.17, .67, .36, .96);
-}
-.pleft{
-  left:-450px;
-}
-.pright{
-  right:-450px;
-}
-#main>div.active .pleft{
-  transform:translateX(-100px);
-}
-#main>div.active .pright{
-  transform:translateX(+100px);
-}
-
-.canvascontainer{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow:hidden;
-}
-
-#canvas1,#canvas2,#canvas3{
-  width: 100%;
-  height: 4000px;
-}
-
-#one .canvascontainer,#one header,#one .body{
-  background: #ff8c53;
-  
-}
-#two .canvascontainer,#two header,#two .body{
-  background: #04d39b;
-}
-#three .canvascontainer,#three header,#three .body{
-  background: #04BBD3;
-}
-
-.inner{
-  position: absolute;
-    height: 100%;
-    display: flex;
+    background: #030301 url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:100%;
+    color:white;
+    display:flex;
     flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1{
+    text-align: center;
+    
+}
+
+footer{
+    text-align:right;
+    font-size:0.8rem;
+}
+section{
+    text-align:center;
+    flex-grow:1;
+}
+
+.links{
+    display:flex;
+    align-items: center;
     justify-content: center;
 }
 
+a{
+    color:white;
+    display: inline-block;
+    margin:5px;
+}
+a:hover{
+    color:grey;
+}
