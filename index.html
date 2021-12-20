@@ -1,1 +1,78 @@
-Hello World
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    
+  <section id="main">
+    <div id="one">
+      <div class="canvascontainer">
+          <canvas id="canvas1"></canvas>
+      </div>
+      
+      <span class="pleft"></span>
+      <span class="pright"></span>
+      <header><h1>Lorenzo Catalano</h1></header>
+      <div class="body">
+          <p>Senior Web Lover</p>
+      </div>
+
+    </div>
+    <div id="two">
+      <div class="canvascontainer">
+        <canvas id="canvas2"></canvas>
+      </div>
+      <span class="pleft"></span>
+      <span class="pright"></span>
+      <header>What I do</header>
+      <div class="body">
+        <h3>Front-end</h3>
+        <ul>
+          <li>HTML</li>
+          <li>Javascript</li>
+          <li>CSS3</li>
+          <li>React</li>
+          <li>AngularJs</li>
+        </ul>
+        <h3>Back-end</h3>
+        <ul>
+          <li>NodeJs</li>
+          <li>Java</li>
+          <li>Scala</li>
+          <li>Devops</li>
+        </ul>
+      </div>
+    </div>
+    <div id="three">
+      <div class="canvascontainer">
+        <canvas id="canvas3"></canvas>
+      </div>
+      <span class="pleft"></span>
+      <span class="pright"></span>
+      <header>Contacts</header>
+      <div class="body">
+          <ul>
+              <li>lor.catalano@gmail.com</li>
+              <li>Linkedin</li>
+            </ul>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
+  <script src="canvas2.js"></script>
+  <script>
+    document.querySelectorAll('#main > div').forEach(el => el.addEventListener('click', function(event) {
+      var x = document.querySelector('div.active')
+      if (x) x.className = ''
+      event.currentTarget.className = 'active'
+    }))
+  </script>
+</body>
+
+</html>
