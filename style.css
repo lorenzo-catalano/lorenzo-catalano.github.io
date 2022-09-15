@@ -168,7 +168,7 @@ h1{
     font-size:30px
 }
 .orange{
-    color:rgb(255, 192, 76);
+    color:rgb(255, 192, 76,50);
 }
 .location{
     padding:20px;
@@ -202,6 +202,9 @@ h1{
     align-items: center;
     stroke: white !important;
 }
+.links div:hover{
+    transform: scale(1.1);
+}
 .linkedin{
     background: rgb(11 103 194);
 
@@ -211,4 +214,25 @@ h1{
 }
 .github{
     background: #2d333b
+}
+
+.shine {
+	background: #222 -webkit-gradient(linear, left top, right top, from(#0000), to(#0000), color-stop(0.5, #fff)) 0 0 no-repeat;
+	-webkit-background-size: 150px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(255 192 76 / 65%);
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes shine {
+	0% {
+		background-position: -500px;
+	}
+	100% {
+		background-position: 500px;
+	}
 }
