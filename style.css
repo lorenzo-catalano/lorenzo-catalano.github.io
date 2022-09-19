@@ -121,11 +121,8 @@ a:hover{
     background:green;   
 }
 
-h1{
+h2{
     padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Fredericka the Great', cursive;
 }
 h4{
     
@@ -283,4 +280,10 @@ h1{
         fill: var(--maincolor);
         }
         
+    }
+
+@media (max-width: 80em) {
+    #innerContainer {
+        padding:10px;
+    }
     }
