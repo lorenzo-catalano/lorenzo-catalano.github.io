@@ -1,3 +1,7 @@
+:root{
+    --maincolor:rgb(76 255 240 / 65%);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,7 +163,7 @@ h4{
 #menu a{
     cursor:pointer;
     text-decoration: none;
-    color:rgb(255, 192, 76);
+    color:var(--maincolor);
 }
 .content{
     text-align: left;
@@ -167,8 +171,8 @@ h4{
 h1{
     font-size:30px
 }
-.orange{
-    color:rgb(255, 192, 76,50);
+.maincolor{
+    color:var(--maincolor);
 }
 .location{
     padding:20px;
@@ -221,7 +225,7 @@ h1{
 	-webkit-background-size: 150px;
     background-clip: text;
     -webkit-background-clip: text;
-    color: rgb(255 192 76 / 65%);
+    color: var(--maincolor);
 	-webkit-animation-name: shine;
 	-webkit-animation-duration: 3s;
 	-webkit-animation-iteration-count: infinite;
@@ -235,4 +239,15 @@ h1{
 	100% {
 		background-position: 500px;
 	}
+}
+
+.photo{
+    background: url(1.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
