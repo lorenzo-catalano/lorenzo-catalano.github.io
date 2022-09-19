@@ -141,27 +141,6 @@ h4{
     font-family: 'Bebas Neue', cursive;
 }
 
-#menu{
-    text-transform: uppercase;
-    padding:20px 40px 20px 20px;
-    position:absolute;
-    right:0;
-    top:0;
-    text-align: left;
-    font-weight: bold;
-    height:20%;
-    width:50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-}
-#menu a{
-    cursor:pointer;
-    text-decoration: none;
-    color:var(--maincolor);
-}
 .content{
     text-align: left;
 }
@@ -178,6 +157,7 @@ h1{
     height:24px;
 }
 .counters{
+    
     width:100%;
     display: flex;
     justify-content: space-around;
@@ -189,6 +169,7 @@ h1{
     
 }
 .counters span{
+    color:var(--maincolor);
     font-size:20px;
     font-weight:bold;
     margin-bottom:2px;
@@ -205,6 +186,7 @@ h1{
 }
 .links div:hover{
     transform: scale(1.1);
+    stroke-width: 1.5;
 }
 .linkedin{
     background: rgb(11 103 194);
@@ -215,6 +197,10 @@ h1{
 }
 .github{
     background: #2d333b
+}
+.pdf{
+    background: #ad0b00;
+    stroke:white;
 }
 
 .shine {
